@@ -155,8 +155,17 @@ nav p {
     align-items: center;
   }
 
+  #splashImage img {
+    max-width: 250px;
+  }
+
   .texto h1 {
     display: block;
     text-align: center;
+    font-size: 50px;
+  }
+
+  .texto {
+    padding-top: 40%;
   }
 }
