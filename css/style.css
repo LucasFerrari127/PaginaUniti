@@ -1,5 +1,6 @@
 body {
   color: #666;
+  background-color: #b0bec5;
 }
 
 header {
@@ -9,9 +10,8 @@ header {
 
 .logoheader {
   float: left;
-  height: 57px;
-  padding-top: 7px;
-  padding-left: 30px;
+  max-height: 57px;
+  margin-top: -10px;
 }
 
 nav ul {
@@ -41,7 +41,6 @@ nav p {
   color: whitesmoke;
   text-decoration: none;
   margin-left: 30px;
-  padding-top: 16px;
   font-family: "Lobster", cursive;
   font-size: 20px;
 }
@@ -49,18 +48,35 @@ nav p {
 .splash {
   width: 100%;
   height: 100vh;
-  background: url(../images/background1.png) center center fixed;
+  *background: url(../images/background.png) center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #b0bec5;
 }
 
 .splash h1 {
-  background-color: #388e3c;
-  color: whitesmoke;
+  color: #388e3c;
   font-family: Arial;
   font-weight: bold;
   font-size: 60px;
   display: inline-block;
+}
+
+.splash .container {
+  height: 100%;
+}
+.splash .row {
+  height: 90%;
+}
+
+#splashImage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#splashImage img {
+  max-height: 400px;
 }
 
 .texto {
@@ -80,6 +96,11 @@ nav p {
 .espacios {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.espacios2 {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .card {
@@ -121,4 +142,21 @@ nav p {
 
 .frases h2 {
   padding: 30px;
+}
+
+.content h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  #splashImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto h1 {
+    display: block;
+    text-align: center;
+  }
 }
